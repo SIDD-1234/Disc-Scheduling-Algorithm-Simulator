@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disk Scheduling Algorithm Simulator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-label">Dark Mode</span>
+  </div>
+  
+  <div class="container">
+    <h1>Disk Scheduling Algorithm Simulator</h1>
+
+    <label for="requests">Enter Disk I/O Requests (comma-separated):</label>
+    <input type="text" id="requests" placeholder="e.g. 82,170,43,140,24,16,190">
+
+    <label for="head">Enter Initial Head Position:</label>
+    <input type="number" id="head" placeholder="e.g. 50">
+
+    <label for="algorithm">Choose Algorithm:</label>
+    <select id="algorithm">
+      <option value="fcfs">FCFS</option>
+      <option value="scan">SCAN</option>
+      <option value="look">LOOK</option>
+      <option value="cscan">C-SCAN</option>
+      <option value="clook">C-LOOK</option>
+    </select>
+
+    <label for="direction">Choose Direction:</label>
+    <select id="direction">
+      <option value="left">Left</option>
+      <option value="right" selected>Right</option>
+    </select>
+
+    <button onclick="simulate()">Simulate</button>
+  </div>
+
+  <canvas id="chart" width="800" height="300"></canvas>
+
+  <div id="output"></div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
