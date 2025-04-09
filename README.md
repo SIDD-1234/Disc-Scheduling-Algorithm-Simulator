@@ -20,14 +20,12 @@ These are the available algorithms that can be implemented:
 # Follow these steps to run the Disk Scheduling Algorithm Simulator on your local machine:
 
 1. Clone the repository
-   git clone https://github.com/your-username/your-repo-name.git
 2. Navigate into the project directory
-   cd your-repo-name
 3. Open the project "index.html" on any reliable browser of your choice
 
 # Tech Stacks Used
 
-HTML5 – Structure and layout of the simulator
-CSS3 – Styling and dark/light theme toggle
-JavaScript (ES6) – Core logic for disk scheduling algorithms
-Chart.js – For visualizing disk head movement as a line chart
+1. HTML5 – Structure and layout of the simulator
+2. CSS3 – Styling and dark/light theme toggle
+3. JavaScript (ES6) – Core logic for disk scheduling algorithms
+4. Chart.js – For visualizing disk head movement as a line chart
